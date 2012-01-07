@@ -23,11 +23,6 @@ function CustomDataTable()
 	this.hasWaitingPanel = true;
 	this.startPageIndex = 1;
 	var head = document.getElementsByTagName('head');
-	var buttoncss = document.createElement('link');
-	buttoncss.rel = 'stylesheet';
-	buttoncss.href = getRootPath() + 'css/button.css';
-	buttoncss.type = 'text/css';
-	head[0].appendChild(buttoncss);
 	//document.getElementById(this.container).parentNode.appendChild(buttoncss);
 	//auto set pagination as data
 	this.pageOptions = {
@@ -160,44 +155,7 @@ function CustomDataTable()
 									c.style.display = tableConfig['disableDownload'] ? 'none' : '';
 								}
 								var b = document.getElementById(downloadMark+'_btnTableDownload');
-								b.onclick = function () {
-									var finalData = new Array();
-									var obj = document.getElementById(dataContainer);
-									var rows = obj.children[0].rows;
-									var temp2 = 0;
-									var head = {};
-									for(var i in rows){
-										if(rows[i].className == 'head'){
-											temp2 = i;
-											head[i] = rows[i].cells;
-										}
-									}
-									var headDef = {};
-									var start = (head[0][0].children[0].tagName == 'INPUT') ? 1 : 0;
-									for(var k in head){
-										for(var i = start; i<head[k].length; i++){
-											headDef[i] = (head[k][i].textContent || head[k][i].innerText).replace(/\s/g, ' ');
-										}
-									}
-									for(var j = parseInt(temp2)+1; j< rows.length;j++){
-										var temp = {};
-										// di Data Item for short
-										var di = rows[j].cells;
-										for(var k=start;k<di.length;k++){
-											if(di[k].childNodes.length){
-												var temp1 = (di[k].textContent || di[k].innerText).replace(/\s/g, ' ');
-											}else{
-												var temp1 = '';
-											}
-											temp[headDef[k]] = temp1;
-										}
-										finalData.push(temp);
-									}
-									url = getRootPath() + 'components/TableDataDownload.php';
-									former.formToPage(url,finalData);
-								}
-								
-															if(obj.completedFunction){
+								if(obj.completedFunction){
 								obj.totalRecords = total;
 								for(var i=0;i<obj.completedFunction.length;i++){
 									switch(obj.completedFunction[i].paramType){

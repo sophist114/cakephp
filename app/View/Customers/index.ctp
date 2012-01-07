@@ -1,3 +1,3 @@
 <?php
-echo $this->Html->script(array('CustomDataTable','customers/show')); 
+echo $this->Html->script(array('table/former','table/CustomDataTable','customers/show')); 
 ?>

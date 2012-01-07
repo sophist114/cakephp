@@ -1,11 +1,10 @@
 body {
 	background-color: lightblue;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
-	font-size:90%;
 	margin: 0;
 }
 #container {
-	text-align: center;
+	
 }
 #footer {
 	clear: both;
@@ -23,8 +22,12 @@ body {
 	padding: 10px 20px;
 }
 #menu a {
-	font-size:150%;
+	margin:5px 5px;
+	font-size:30px;
 	color: white;
 	text-decoration:none;
 	text-shadow:rbga(0,0,0,0.8) 2px 2px 4px;
+}
+#menu a:hover{
+	background-color: #99CC66;
 }

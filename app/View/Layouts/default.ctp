@@ -16,20 +16,19 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<?php echo $this->Html->script('jquery'); ?>
+			<?php echo $this->Html->script(array('jquery','common')); ?>
 			<div id="menu">
 				<?php
-					echo $this->Html->link('Home', array( 'controller' => 'home', 'action' => 'index')).' ';
-					echo $this->Html->link('Customers', array( 'controller' => 'customers', 'action' => 'index')).' ';
-					echo $this->Html->link('Posts', array( 'controller' => 'posts', 'action' => 'index')).' ';
-					echo $this->Html->link('DCA', array( 'controller' => 'dca', 'action' => 'index')).' ';
+					echo $this->Html->link('Home', array( 'controller' => 'pages', 'action' => 'home'));
+					echo $this->Html->link('Customers', array( 'controller' => 'customers', 'action' => 'index'));
+					echo $this->Html->link('Posts', array( 'controller' => 'posts', 'action' => 'index'));
+					echo $this->Html->link('DCA', array( 'controller' => 'dca', 'action' => 'index'));
 				?>
 			</div>
 		</div>
 		<div id="content">
-
 			<?php echo $this->Session->flash(); ?>
-
+			
 			<?php echo $content_for_layout; ?>
 
 		</div>
