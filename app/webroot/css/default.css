@@ -1,5 +1,5 @@
 body {
-	background-color: lightgreen;
+	background-color: lightblue;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
 	margin: 0;
@@ -20,10 +20,11 @@ body {
 	overflow: auto;
 }
 #header{
-	font-size:200%;
 	padding: 10px 20px;
 }
 #menu a {
+	font-size:150%;
 	color: white;
 	text-decoration:none;
+	text-shadow:rbga(0,0,0,0.8) 2px 2px 4px;
 }

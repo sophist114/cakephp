@@ -16,11 +16,12 @@
 <body>
 	<div id="container">
 		<div id="header">
+			<?php echo $this->Html->script('jquery'); ?>
 			<div id="menu">
 				<?php
-					echo $this->Html->link('Home', array( 'controller' => 'home', 'action' => 'index')).'|';
-					echo $this->Html->link('Posts', array( 'controller' => 'posts', 'action' => 'index')).'|';
-					echo $this->Html->link('DCA', array( 'controller' => 'dca', 'action' => 'index')).'|';
+					echo $this->Html->link('Home', array( 'controller' => 'home', 'action' => 'index')).' ';
+					echo $this->Html->link('Posts', array( 'controller' => 'posts', 'action' => 'index')).' ';
+					echo $this->Html->link('DCA', array( 'controller' => 'dca', 'action' => 'index')).' ';
 				?>
 			</div>
 		</div>
@@ -33,7 +34,7 @@
 		</div>
 		<div id="footer">
 			<?php
-				echo 'Powered by Sophist';
+				echo 'Powered by Sophist Wu';
 			?>
 		</div>
 	</div>
