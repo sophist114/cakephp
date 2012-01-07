@@ -1,5 +1,6 @@
 /app/Config
 /app/tmp
+/lib
 /plugins
 /vendors
 .DS_Store
