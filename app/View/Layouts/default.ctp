@@ -20,6 +20,7 @@
 			<div id="menu">
 				<?php
 					echo $this->Html->link('Home', array( 'controller' => 'home', 'action' => 'index')).' ';
+					echo $this->Html->link('Customers', array( 'controller' => 'customers', 'action' => 'index')).' ';
 					echo $this->Html->link('Posts', array( 'controller' => 'posts', 'action' => 'index')).' ';
 					echo $this->Html->link('DCA', array( 'controller' => 'dca', 'action' => 'index')).' ';
 				?>
