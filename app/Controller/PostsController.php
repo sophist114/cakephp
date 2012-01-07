@@ -19,6 +19,5 @@ class PostsController extends AppController {
 	}
 	
 	function add() {
-	
 	}
 }
