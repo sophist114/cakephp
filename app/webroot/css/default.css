@@ -1,0 +1,29 @@
+body {
+	background-color: lightgreen;
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:90%;
+	margin: 0;
+}
+#container {
+	text-align: center;
+}
+#footer {
+	clear: both;
+	padding: 6px 10px;
+	text-align: right;
+}
+#content{
+	background: #fff;
+	clear: both;
+	color: #333;
+	padding: 10px 20px 40px 20px;
+	overflow: auto;
+}
+#header{
+	font-size:200%;
+	padding: 10px 20px;
+}
+#menu a {
+	color: white;
+	text-decoration:none;
+}
